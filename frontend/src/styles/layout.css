@@ -342,7 +342,7 @@
   overflow: hidden;
 }
 
-.auth-card-wide {
+.auth-card.ant-card.auth-card-wide {
   width: min(100%, 960px);
 }
 
@@ -355,6 +355,7 @@
 
 .auth-panel,
 .auth-form-panel {
+  min-width: 0;
   padding: 28px;
 }
 
@@ -392,7 +393,8 @@
   margin: 0 0 8px;
   font-size: 30px;
   line-height: 1.08;
-  max-width: 340px;
+  max-width: 420px;
+  word-break: keep-all;
 }
 
 .welcome-kicker {
@@ -450,7 +452,20 @@
 }
 
 .auth-form-panel {
+  align-items: center;
   justify-content: center;
+}
+
+.auth-form-panel > .ant-segmented,
+.auth-form {
+  width: min(100%, 420px);
+}
+
+.auth-form.ant-space .ant-space-item,
+.auth-form .ant-input,
+.auth-form .ant-input-affix-wrapper,
+.auth-form .ant-btn {
+  width: 100%;
 }
 
 .auth-form .ant-alert {

@@ -100,6 +100,12 @@
     max-width: 520px;
   }
 
+  .auth-form-panel > .ant-segmented,
+  .auth-form {
+    width: 100%;
+    max-width: 520px;
+  }
+
   .auth-feature-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
