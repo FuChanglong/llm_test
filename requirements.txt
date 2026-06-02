@@ -1,0 +1,31 @@
+# 核心依赖
+langchain-classic
+langchain-community
+langchain-core
+langchain-openai
+mcp
+chromadb
+jieba
+rank-bm25
+fastapi
+uvicorn
+httpx
+requests
+python-dotenv
+numexpr
+anyio
+python-docx
+pypdf
+python-multipart
+pandas
+openpyxl
+edge-tts
+
+# 可选依赖（用于网络搜索）
+ddgs
+duckduckgo-search
+
+# 可选依赖（用于专业嵌入模型）
+# sentence-transformers
+# transformers
+# torch

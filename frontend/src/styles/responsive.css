@@ -1,0 +1,225 @@
+@media (max-width: 1199px) {
+  :root {
+    --composer-width: 820px;
+  }
+
+  .overview-grid,
+  .capability-grid,
+  .knowledge-stats,
+  .welcome-band,
+  .prompt-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .knowledge-page,
+  .overview-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .knowledge-side {
+    order: -1;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    min-height: 54px;
+    padding: 0 12px;
+  }
+
+  .content {
+    overflow: hidden;
+  }
+
+  .messages {
+    padding: 18px 16px 132px;
+  }
+
+  .composer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8px 10px 12px;
+  }
+
+  .composer-input-shell {
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .mobile-action-sheet .ant-drawer-content {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+  }
+
+  .workspace-surface-drawer .ant-drawer-content-wrapper,
+  .rag-debug-drawer .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+
+  .settings-shell {
+    min-height: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .settings-nav {
+    border-right: 0;
+    border-bottom: 1px solid var(--border-soft);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .settings-content {
+    padding: 12px 16px;
+  }
+
+  .knowledge-doc-tools {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --header-height: 54px;
+  }
+
+  .header-title.ant-typography {
+    font-size: 16px;
+  }
+
+  .header-ops .ant-btn span:not(.anticon) {
+    display: none;
+  }
+
+  .msg.user .msg-stack {
+    max-width: 88%;
+  }
+
+  .msg.assistant .msg-stack {
+    width: 100%;
+  }
+
+  .message-actions {
+    opacity: 1;
+  }
+
+  .composer-mode-select {
+    width: 76px;
+  }
+
+  .composer-mode-select .ant-select-selection-item {
+    font-size: 12px;
+  }
+
+  .composer-plus-button.ant-btn,
+  .composer-voice-button.ant-btn,
+  .composer-send-button.ant-btn,
+  .composer-stop-button.ant-btn {
+    width: 38px;
+    min-width: 38px;
+    height: 38px;
+  }
+
+  .tool-menu {
+    width: 100%;
+  }
+
+  .overview-page,
+  .knowledge-page {
+    padding: 14px;
+  }
+
+  .overview-hero,
+  .knowledge-toolbar {
+    flex-direction: column;
+  }
+
+  .overview-hero .ant-space,
+  .knowledge-toolbar .ant-space,
+  .overview-hero .ant-btn,
+  .knowledge-toolbar .ant-btn {
+    width: 100%;
+  }
+
+  .overview-grid,
+  .capability-grid,
+  .knowledge-stats,
+  .welcome-band,
+  .prompt-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .knowledge-doc-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .knowledge-doc-selection,
+  .knowledge-result-head,
+  .source-card-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .knowledge-doc-mobile-actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .knowledge-doc-mobile-pagination {
+    justify-content: space-between;
+  }
+
+  .auth-card-wide .ant-card-body {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-panel {
+    border-right: 0;
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .settings-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-row {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .settings-row-control,
+  .settings-control {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .messages {
+    padding-inline: 12px;
+  }
+
+  .composer {
+    padding-inline: 8px;
+  }
+
+  .composer-inline-actions {
+    gap: 2px;
+  }
+
+  .composer-mode-select {
+    width: 78px;
+  }
+
+  .attachment-name {
+    max-width: 130px;
+  }
+
+  .knowledge-doc-mobile-actions {
+    grid-template-columns: 1fr;
+  }
+}

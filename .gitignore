@@ -1,0 +1,37 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+chat_memory/
+.chat_memory/
+rag_docs/
+downloads/
+auth.json
+.chroma*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Python
+.venv/
+venv/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Logs and local output
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
