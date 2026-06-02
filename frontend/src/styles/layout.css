@@ -319,7 +319,7 @@
   align-items: center;
   justify-content: center;
   padding: 24px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .auth-backdrop {
@@ -343,12 +343,12 @@
 }
 
 .auth-card-wide {
-  width: min(100%, 880px);
+  width: min(100%, 960px);
 }
 
 .auth-card-wide .ant-card-body {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
+  grid-template-columns: minmax(300px, 0.92fr) minmax(360px, 1.08fr);
   gap: 0;
   padding: 0;
 }
@@ -374,6 +374,7 @@
   align-items: center;
   gap: 10px;
   font-weight: 700;
+  line-height: 1.25;
 }
 
 .auth-brand-mark {
@@ -391,6 +392,7 @@
   margin: 0 0 8px;
   font-size: 30px;
   line-height: 1.08;
+  max-width: 340px;
 }
 
 .welcome-kicker {
@@ -409,8 +411,9 @@
 .auth-feature-list article {
   display: flex;
   gap: 10px;
-  align-items: center;
+  align-items: flex-start;
   color: var(--text-muted);
+  line-height: 1.45;
 }
 
 .auth-live-strip {
@@ -430,6 +433,13 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  flex: none;
+}
+
+.auth-live-strip strong {
+  min-width: 0;
+  text-align: right;
+  line-height: 1.25;
 }
 
 .auth-form-panel,
@@ -437,6 +447,10 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.auth-form-panel {
+  justify-content: center;
 }
 
 .auth-form .ant-alert {

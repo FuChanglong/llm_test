@@ -80,6 +80,30 @@
   .knowledge-doc-tools {
     grid-template-columns: 1fr 1fr;
   }
+
+  .auth-shell {
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .auth-card-wide .ant-card-body {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-panel {
+    border-right: 0;
+    border-bottom: 1px solid var(--border-soft);
+    min-height: auto;
+  }
+
+  .auth-copy h2.ant-typography {
+    max-width: 520px;
+  }
+
+  .auth-feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 767px) {
@@ -173,15 +197,6 @@
     justify-content: space-between;
   }
 
-  .auth-card-wide .ant-card-body {
-    grid-template-columns: 1fr;
-  }
-
-  .auth-panel {
-    border-right: 0;
-    border-bottom: 1px solid var(--border-soft);
-  }
-
   .settings-nav {
     grid-template-columns: 1fr;
   }
@@ -221,5 +236,33 @@
 
   .knowledge-doc-mobile-actions {
     grid-template-columns: 1fr;
+  }
+
+  .auth-shell {
+    padding: 10px;
+  }
+
+  .auth-panel,
+  .auth-form-panel {
+    padding: 20px;
+  }
+
+  .auth-copy h2.ant-typography {
+    font-size: 26px;
+  }
+
+  .auth-feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-live-strip {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 12px;
+  }
+
+  .auth-live-strip strong {
+    text-align: left;
   }
 }
